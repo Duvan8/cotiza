@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Acemar</title>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-type" content="text/html" charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script src="/script/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/4.0.96/css/materialdesignicons.min.css"
+    />
+    <!-- Style CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-kit/3.0.2/css/material-kit.css"
+      integrity="sha512-BinDPZLJK6LgAxy8Rzbzh9CY1k2SL2VABFIcfhiXztdz29uBXkWTq+yhfrZBRb3ASyiz/WPsD8QGE6vBBjPz0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      charset="UTF-8"
+      href="https://translate.googleapis.com/translate_static/css/translateelement.css"
+    />
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <script src="/script/usueli.js"></script>
+    <script src="/script/actualizar.js"></script>
+  </head>
+
+  <body class="bg-yellow">
+    <!-- Navbar Dark -->
+
+    <nav class="navbar navbar-expand-lg bg-white z-index-3 py-3 d-print-none">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://www.acemar.co/wp-content/uploads/2020/08/LOGO-Acemar-Gris-2020.png"
+            alt=""
+            height="56"
+          />
+        </a>
+        <button
+          class="navbar-toggler shadow-none ms-2 collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Navegación de palanca"
+        >
+          <span class="navbar-toggler-icon mt-2">
+            <span class="navbar-toggler-bar bar1"></span>
+            <span class="navbar-toggler-bar bar2"></span>
+            <span class="navbar-toggler-bar bar3"></span>
+          </span>
+        </button>
+        <div
+          class="navbar-collapse w-100 pt-3 pb-2 py-lg-0 collapse"
+          id="navigation"
+        >
+          <ul class="navbar-nav navbar-nav-hover mx-auto">
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+                role="button"
+                href="usuarios"
+              >
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> Usuarios </font>
+                </font>
+              </a>
+            </li>
+
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+                role="button"
+                href="cotizacion"
+              >
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">Cotizaciones </font>
+                </font>
+              </a>
+            </li>
+
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+                role="button"
+                href="productos"
+              >
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">productos </font>
+                </font>
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+                role="button"
+                href="fletes"
+              >
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">Fletes & impuestos </font>
+                </font>
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+                role="button"
+                href="informes"
+              >
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">Informes </font>
+                </font>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="btn bg-gradient-dark dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  id="navbarDropdownMenuLink2"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      administración
+                    </font>
+                  </font>
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink2"
+                >
+                  <li>
+                    <a class="dropdown-item" href="/">
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          cerrar sesión
+                        </font>
+                      </font>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End Navbar -->
+
+    <div class="container container-print my-md-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-dark">
+              <div class="col-12">
+                <h4 class="card-title">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >Lista de Usuarios</font
+                    >
+                  </font>
+                </h4>
+              </div>
+
+              <form
+                class="row align-items-center w-100"
+                action="busq"
+                method="post"
+              >
+                <div class="col">
+                  <div class="input-group bg-white rounded">
+                    <input
+                      type="text"
+                      name="search"
+                      placeholder="Búsqueda"
+                      class="form-control"
+                      maxlength="250"
+                      id="id_search"
+                    />
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-secondary m-0" type="submit">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">Filtrar</font>
+                    </font>
+                  </button>
+                </div>
+                <div class="col-auto">
+                  <a class="btn btn-dark m-0" href="crearusu">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">Crear</font>
+                    </font>
+                  </a>
+                </div>
+              </form>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table myTable1 data1Table">
+                  <thead class="text-dark">
+                    <tr>
+                      <th></th>
+                      <th>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">Nombre</font>
+                        </font>
+                      </th>
+                      <th>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">Correo</font>
+                        </font>
+                      </th>
+                      <th>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >Contraseña</font
+                          >
+                        </font>
+                      </th>
+                      <th>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">Telefono</font>
+                        </font>
+                      </th>
+                      <th>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">Direccion</font>
+                        </font>
+                      </th>
+                      <th>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">Descuento</font>
+                        </font>
+                      </th>
+                      <th class="text-end">
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">Rol</font>
+                        </font>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% datos.forEach(function (datos) { %>
+                    <tr>
+                      <td>
+                        <input
+                          type="text"
+                          value="<%= datos.id%>"
+                          name="id"
+                          class="col-12 form-control id"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          value="<%= datos.usuario%>"
+                          name="usu"
+                          class="col-12 form-control usu"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          value="<%= datos.correo%>"
+                          name="cor"
+                          class="col-12 form-control cor"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          value="<%= datos.clave%>"
+                          name="cla"
+                          class="col-12 form-control cla"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          value="<%= datos.telefono%>"
+                          name="tel"
+                          class="col-12 form-control tel"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          value="<%= datos.direccion%>"
+                          name="dir"
+                          class="col-12 form-control dir"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          value="<%= datos.descuento%>"
+                          name="des"
+                          class="col-6 form-control des"
+                        />
+                      </td>
+                      
+                      <td>
+                        <input
+                          type="text"
+                          value="<%= datos.rol%>"
+                          name="rol"
+                          class="col-12 form-control rol"
+                        />
+                      </td>
+                      <td>
+                        <button
+                          class="btn btn-dark m-0 act"
+                          id="act"
+                          type="submit"
+                        >
+                          <i class="fa fa-pencil me-2"></i>
+                          <font style="vertical-align: inherit">
+                            <font style="vertical-align: inherit">Editar</font>
+                          </font>
+                        </button>
+                      </td>
+                      <td>
+                        <button class="btn btn-dark m-0 usueli" type="submit">
+                          <i class="fa fa-trash me-2"></i>
+                          <font style="vertical-align: inherit">
+                            <font style="vertical-align: inherit">Borrar</font>
+                          </font>
+                        </button>
+                      </td>
+                    </tr>
+                    <% }) %>
+                  </tbody>
+                </table>
+              </div>
+              <div class="text-center">
+                <div class="d-flex justify-content-center">
+                  <ul class="pagination pagination-dark m-4">
+                    <li class="page-item active">
+                      <a href="#" class="page-link">
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"> 1 </font>
+                        </font>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    Mostrar 1 de 1 Usuarios
+                  </font>
+                </font>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

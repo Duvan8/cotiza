@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Acemar</title>
+  <meta http-equiv="Content-type" content="text/html" charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <script src="/script/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.0.96/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-kit/3.0.2/css/material-kit.css"
+    integrity="sha512-BinDPZLJK6LgAxy8Rzbzh9CY1k2SL2VABFIcfhiXztdz29uBXkWTq+yhfrZBRb3ASyiz/WPsD8QGE6vBBjPz0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <link type="text/css" rel="stylesheet" charset="UTF-8"
+    href="https://translate.googleapis.com/translate_static/css/translateelement.css">
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <script src="/script/creado.js"></script>
+</head>
+
+<body class="bg-yellow">
+  <nav class="navbar navbar-expand-lg bg-white z-index-3 py-3 d-print-none">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.acemar.co/wp-content/uploads/2020/08/LOGO-Acemar-Gris-2020.png" alt="" height="56">
+      </a>
+      <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
+        aria-label="Navegación de palanca">
+        <span class="navbar-toggler-icon mt-2">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+        <ul class="navbar-nav navbar-nav-hover" style="margin-left: 80%;">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="#" class="btn bg-gradient-dark dropdown-toggle " data-bs-toggle="dropdown"
+                id="navbarDropdownMenuLink2">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">
+                    Cliente
+                  </font>
+                </font>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                <li>
+                  <a class="dropdown-item" href="/">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">
+                        cerrar sesión
+                      </font>
+                    </font>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container container-print my-md-5">
+    <div class="card mx-auto mb-4" style="max-width: 580px;">
+      <div class="card-header card-header-dark card-header-icon">
+        <div class="card-icon text-center">
+          <h4 class="mb-0"><strong>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Crear cotización</font>
+              </font>
+            </strong></h4>
+        </div>
+      </div>
+      <form method="post" action="viscot">
+        <div class="card-body">
+          <div class="row">
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_product">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Producto</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <select name="product" class="form-control" id="id_product">
+                      <option value="5">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Frontino 1RV</font>
+                        </font>
+                      </option>
+
+                      <option value="3">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Frontino 3R</font>
+                        </font>
+                      </option>
+
+                      <option value="8">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Frontino 2RV</font>
+                        </font>
+                      </option>
+
+                      <option value="4">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Frontino SR</font>
+                        </font>
+                      </option>
+
+                      <option value="7">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Frontino 2R</font>
+                        </font>
+                      </option>
+
+                      <option value="10">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Frontino 1R1RV</font>
+                        </font>
+                      </option>
+
+                      <option value="11">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Frontino 3R1RV</font>
+                        </font>
+                      </option>
+
+                      <option value="9">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Frontino 3R2RV</font>
+                        </font>
+                      </option>
+
+                      <option value="6">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Frontiño 1R</font>
+                        </font>
+                      </option>
+
+                      <option value="12">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Belmira 1VCA</font>
+                        </font>
+                      </option>
+
+                      <option value="13">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Belmira 1VDP</font>
+                        </font>
+                      </option>
+
+                      <option value="14">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Belmira 4VCA</font>
+                        </font>
+                      </option>
+
+                      <option value="16">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Belmira 4VDP</font>
+                        </font>
+                      </option>
+
+                      <option value="15">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Belmira 1VCP</font>
+                        </font>
+                      </option>
+
+                      <option value="17">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Rejilla ventilada 1</font>
+                        </font>
+                      </option>
+
+                      <option value="18">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Louver ventilado 2</font>
+                        </font>
+                      </option>
+
+                      <option value="19">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Rejilla ventilada 3</font>
+                        </font>
+                      </option>
+
+                      <option value="20">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Louver ventilado 4</font>
+                        </font>
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_quantity">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Cantidad</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <input type="number" name="quantity" value="1" class="form-control quantity" id="id_quantity">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_openingType">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Tipo de apertura</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <select name="openingType" class="form-control openingType" id="id_openingType">
+                      <option value="Solo losa" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Solo losa</font>
+                        </font>
+                      </option>
+
+                      <option value="Ritmo">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Ritmo</font>
+                        </font>
+                      </option>
+
+                      <option value="Bolsillo">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Bolsillo</font>
+                        </font>
+                      </option>
+
+                      <option value="Corredizo">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Corredizo</font>
+                        </font>
+                      </option>
+
+                      <option value="Granero">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Granero</font>
+                        </font>
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_jamb">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Jamba</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="jamb" class="form-control" id="id_jamb">
+                      <option value="Precolgado" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Precolgado</font>
+                        </font>
+                      </option>
+
+                      <option value="Noquear">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Noquear</font>
+                        </font>
+                      </option>
+
+                      <option value="BolsilloNinguno">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">BolsilloNinguno</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_beveling">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">biselado</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="beveling" class="form-control" id="id_beveling">
+                      <option value="Bavel Ambos Lados" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Bavel Ambos Lados</font>
+                        </font>
+                      </option>
+
+                      <option value="sin bisel">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">sin bisel</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_woodVeneerOptions">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Opciones de chapa de madera*</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="dropdown select-thumbnail">
+                      <button class="btn btn-outline-default dropdown-toggle" type="button" id="dropdownMenu1"
+                        data-bs-toggle="dropdown">
+                        <span class="js-textureLabel" data-value="Ultragreen"  name="country"  data-label="Ultragreen (Embossed Plain MDF)"></span>
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">
+                              Grieta de roble blanco
+                            </font>
+                          </font>
+                        </span>
+                      </button>
+                      
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu1">
+                        <li>
+                          <a class="js-textures dropdown-item" href="#1" data-value="Ultragreen"
+                            data-label="Ultragreen (Embossed Plain MDF)">
+                            <img class="me-2" src="imagenes/64 x 64 Px/Ultragreen.jpg" width="32"
+                              height="32">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">
+                                Ultragreen (MDF liso en relieve)
+                              </font>
+                            </font>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#2" data-value="Grieta de roble blanco" data-label="White Oak Rift">
+                            <img class="me-2" src="imagenes/64 x 64 Px/White_Oak_Rift.jpg" width="32" height="32">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">
+                                Grieta de roble blanco
+                              </font>
+                            </font>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#3" data-value="Grieta de roble rojo" data-label="Red Oak Rift">
+                            <img class="me-2" src="imagenes/64 x 64 Px/Red_Oak_Rift.jpg" width="32" height="32">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">
+                                Grieta de roble rojo
+                              </font>
+                            </font>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#4" data-value="Corona de nogal" data-label="Walnut Crown">
+                            <img class="me-2" src="imagenes/64 x 64 Px/Walnut_Crown.jpg" width="32" height="32">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">
+                                Corona de nogal
+                              </font>
+                            </font>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#5" data-value="White Oak Crown" data-label="White Oak Crown">
+                            <img class="me-2" src="imagenes/64 x 64 Px/White_Oak_Crown.jpg" width="32" height="32">
+                            White Oak Crown
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#6" data-value="Jacoba Crown" data-label="Jacoba Crown">
+                            <img class="me-2" src="imagenes/64 x 64 Px/Jacoba_Crown.jpg" width="32" height="32">
+                            Jacoba Crown
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#7" data-value="Engineered Oak Crown"
+                            data-label="Engineered Oak Crown">
+                            <img class="me-2" src="imagenes/64 x 64 Px/Engineered_Oak_Crown.jpg" width="32" height="32">
+                            Engineered Oak Crown
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#8" data-value="Engineered Oak Rift"
+                            data-label="Engineered Oak Rift">
+                            <img class="me-2" src="imagenes/64 x 64 Px/engineered_oak_rift.jpg" width="32" height="32">
+                            Engineered Oak Rift
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#9" data-value="Engineered Walnut Rift"
+                            data-label="Engineered Walnut Rift">
+                            <img class="me-2" src="imagenes/64 x 64 Px/engineered_walnut_rift.jpg" width="32" height="32">
+                            Engineered Walnut Rift
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#10" data-value="1Engineered Teak Rift"
+                            data-label="Engineered Teak Rift">
+                            <img class="me-2" src="imagenes/64 x 64 Px/engineered_teak_rift.jpg" width="32" height="32">
+                            Engineered Teak Rift
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#11" data-value="Eucaliptus Crown" data-label="Eucaliptus Crown">
+                            <img class="me-2" src="imagenes/64 x 64 Px/eucaliptus_crown.jpg" width="32" height="32">
+                            Eucaliptus Crown
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#12" data-value="Khaya Crown" data-label="Khaya Crown">
+                            <img class="me-2" src="imagenes/64 x 64 Px/khaya_crown.jpg" width="32" height="32">
+                            Khaya Crown
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#13" data-value="Beech Crown" data-label="Beech Crown">
+                            <img class="me-2" src="imagenes/64 x 64 Px/beech_crown.jpg" width="32" height="32">
+                            Beech Crown
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="js-textures dropdown-item" href="#14" data-value="Red Oak Crown" data-label="Red Oak Crown">
+                            <img class="me-2" src="imagenes/64 x 64 Px/red_oak_crown.jpg" width="32" height="32">
+                            Red Oak Crown
+                          </a>
+                        </li>
+                      </ul>
+                      <input type="hidden" name="country" value="Grieta de roble blanco" class="form-control country"
+                        id="id_woodVeneerOptions">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_finishOptions">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Opciones de acabado</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <select name="finishOptions" name="finishOptions" class="form-control" id="id_finishOptions">
+                      <option value="Caoba ultraverde" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Caoba ultraverde</font>
+                        </font>
+                      </option>
+
+                      <option value="Roble oscuro ultraverde">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Roble oscuro ultraverde</font>
+                        </font>
+                      </option>
+
+                      <option value="Corona de roble lavado ultraverde">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Corona de roble lavado ultraverde</font>
+                        </font>
+                      </option>
+
+                      <option value="Corona de caoba ultraverd">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Corona de caoba ultraverde</font>
+                        </font>
+                      </option>
+
+                      <option value="Roble Natural">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Roble Natural (Sin manchas)</font>
+                        </font>
+                      </option>
+
+                      <option value="Roble Bercy">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Roble Bercy</font>
+                        </font>
+                      </option>
+
+                      <option value="Roble Botzaris">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Roble Botzaris</font>
+                        </font>
+                      </option>
+
+                      <option value="Roble rosa">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Roble rosa</font>
+                        </font>
+                      </option>
+
+                      <option value="Roble Mont Martre">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Roble Mont Martre</font>
+                        </font>
+                      </option>
+
+                      <option value="Roble Charonne">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Roble Charonne</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_slabGrossWidthOptions">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Ancho bruto de la losa (pulgadas)*</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <select name="slabGrossWidthOptions" class="form-control slabGrossWidthOptions" id="id_slabGrossWidthOptions">
+                      <option value="24" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">24"</font>
+                        </font>
+                      </option>
+
+                      <option value="26">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">26"</font>
+                        </font>
+                      </option>
+
+                      <option value="28">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">28"</font>
+                        </font>
+                      </option>
+
+                      <option value="30">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">30"</font>
+                        </font>
+                      </option>
+
+                      <option value="32">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">32"</font>
+                        </font>
+                      </option>
+
+                      <option value="34">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">34"</font>
+                        </font>
+                      </option>
+
+                      <option value="36">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">36"</font>
+                        </font>
+                      </option>
+
+                      <option value="38">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">38"</font>
+                        </font>
+                      </option>
+
+                      <option value="40">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">40"</font>
+                        </font>
+                      </option>
+
+                      <option value="42">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">42"</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_thickness">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Espesor</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="thickness" class="form-control thickness" id="id_thickness">
+                      <option value="1- 3/8"" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">1- 3/8"</font>
+                        </font>
+                      </option>
+
+                      <option value="1- 3/4"">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">1- 3/4"</font>
+                        </font>
+                      </option>
+
+                      <option value="2- 1/4"">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">2- 1/4"</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+
+
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_fireRating">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Resistencia al fuego</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="fireRating" class="form-control fireRating" id="id_fireRating">
+                      <option value="sin calificar" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">sin calificar</font>
+                        </font>
+                      </option>
+
+                      <option value="Estándar europeo de 20 minutos EI220">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Estándar europeo de 20 minutos EI220</font>
+                        </font>
+                      </option>
+
+                      <option value="Estándar europeo EI230 de 30 minutos">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Estándar europeo EI230 de 30 minutos</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+
+
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_machiningPrep">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Preparación de mecanizado</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="machiningPrep" class="form-control machiningPrep" id="id_machiningPrep">
+                      <option value="Ninguna" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Ninguna</font>
+                        </font>
+                      </option>
+
+                      <option value="Bisagras ocultas">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Bisagras ocultas</font>
+                        </font>
+                      </option>
+
+                      <option value="Diámetro único">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Diámetro único</font>
+                        </font>
+                      </option>
+
+                      <option value="Doble orificio">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Doble orificio</font>
+                        </font>
+                      </option>
+
+                      <option value="Bisagras ocultas y orificio simple">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Bisagras ocultas y orificio simple</font>
+                        </font>
+                      </option>
+
+                      <option value="Bisagras ocultas y doble orificio">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Bisagras ocultas y doble orificio</font>
+                        </font>
+                      </option>
+
+                      <option value="Cerradura de embutir">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Cerradura de embutir</font>
+                        </font>
+                      </option>
+
+                      <option value="Bisagras ocultas y cerradura de embutir">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Bisagras ocultas y cerradura de embutir</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+
+
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_matchingTheDoor">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">A juego con la puerta</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="matchingTheDoor" class="form-control matchingTheDoor" id="id_matchingTheDoor">
+                      <option value="Marco estándar" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Marco estándar</font>
+                        </font>
+                      </option>
+
+                      <option value="Marco estándar + carcasa superpuesta">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Marco estándar + carcasa superpuesta</font>
+                        </font>
+                      </option>
+
+                      <option value="Tipo C 20 + carcasa superpuesta">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Tipo C 20 + carcasa superpuesta</font>
+                        </font>
+                      </option>
+
+                      <option value="Tipo C 30 + carcasa superpuest">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Tipo C 30 + carcasa superpuesta</font>
+                        </font>
+                      </option>
+
+                      <option value="Tipo D">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Tipo D</font>
+                        </font>
+                      </option>
+
+                      <option value="Tipo K 20 sin parar">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Tipo K 20 sin parar</font>
+                        </font>
+                      </option>
+
+                      <option value="Tope de madera tipo K 20">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Tope de madera tipo K 20</font>
+                        </font>
+                      </option>
+
+                      <option value="Sin marco P + Tope de aluminio">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Sin marco P + Tope de aluminio</font>
+                        </font>
+                      </option>
+
+                      <option value="Jamba sin marco hacia adentro">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Jamba sin marco hacia adentro</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_leafCount">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Recuento de hojas</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="leafCount" class="form-control leafCount" id="id_leafCount">
+                      <option value="Único" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Único</font>
+                        </font>
+                      </option>
+
+                      <option value="Par">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Par</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+
+
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_handing">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">entrega</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="handing" class="form-control handing" id="id_handing">
+                      <option value="sin entrega" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">sin entrega</font>
+                        </font>
+                      </option>
+
+                      <option value="RH">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">RH</font>
+                        </font>
+                      </option>
+
+                      <option value="LH">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">LH</font>
+                        </font>
+                      </option>
+
+                      <option value="Entrega desconocida">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Entrega desconocida</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+
+
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_doorConstruction">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Construcción de puertas</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="doorConstruction" class="form-control doorConstruction" id="id_doorConstruction">
+                      <option value="Núcleo sólido" selected="">
+                        <font style="vertical-align: inherit;">Núcleo sólido</font>
+                      <option value="Núcleo hueco">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Núcleo hueco</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+
+
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_doorBeveling">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Biselado de puertas</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="doorBeveling" class="form-control doorBeveling" id="id_doorBeveling">
+                      <option value="Canto de chapa de madera Sin bisel" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Canto de chapa de madera Sin bisel</font>
+                        </font>
+                      </option>
+
+                      <option value="Borde de canto ABS 1 mm Bisel">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Borde de canto ABS 1 mm Bisel</font>
+                        </font>
+                      </option>
+
+                      <option value="Canto ABS Bisel 2mm">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Canto ABS Bisel 2mm</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+
+
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_routedKerfWidth">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Ancho de corte enrutado</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="routedKerfWidth" class="form-control routedKerfWidth" id="id_routedKerfWidth">
+                      <option value="Ninguna" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Ninguna</font>
+                        </font>
+                      </option>
+
+                      <option value="1/8"">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">1/8"</font>
+                        </font>
+                      </option>
+
+                      <option value="3/16"">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">3/16"</font>
+                        </font>
+                      </option>
+
+                      <option value="1/4"">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">1/4"</font>
+                        </font>
+                      </option>
+
+                      <option value="3/8"">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">3/8"</font>
+                        </font>
+                      </option>
+
+                      <option value="1/2"">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">1/2"</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_height">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Altura</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="height" class="form-control height" id="id_height">
+                      <option value="80" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">80"</font>
+                        </font>
+                      </option>
+
+                      <option value="84">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">84"</font>
+                        </font>
+                      </option>
+
+                      <option value="95">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">95"</font>
+                        </font>
+                      </option>
+
+                      <option value="108">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">108"</font>
+                        </font>
+                      </option>
+
+                      <option value="120">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">120"</font>
+                        </font>
+                      </option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group mb-3">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-form-label">
+                    <label class="form-control-label" for="id_prefinish">
+                      <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">preacabado</font>
+                      </font>
+                    </label>
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <select name="prefinish" class="form-control prefinish" id="id_prefinish">
+                      <option value="Inconcluso" selected="">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Inconcluso</font>
+                        </font>
+                      </option>
+
+                      <option value="Curado de uretano UV">
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align: inherit;">Curado de uretano UV</font>
+                        </font>
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input type="hidden" name="price" value="0.0" class="form-control" id="id_price">
+            <input type="hidden" name="tax" value="0.0" class="form-control" id="id_tax">
+            <input type="hidden" name="total" value="0.0" class="form-control" id="id_total">
+          </div>
+
+          <div class="row mt-4 d-none">
+            <div class="col-12 text-end">
+              <button class="btn m-0" type="button" data-bs-toggle="modal" data-bs-target="#previewModal">Preview
+                drawings</button>
+              <button class="btn btn-dark m-0" type="submit">Create Quote</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="card-body bg-gray-200">
+          <div class="billing">
+            <div class="d-flex justify-content-between">
+              <span>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Total parcial</font>
+                </font>
+              </span><span id="price" class="font-weight-bold">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">$0.0</font>
+                </font>
+              </span>
+            </div>
+            
+            <div class="d-flex justify-content-between mt-2">
+              <span class="text-success">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Descuento</font>
+                </font>
+              </span>
+              
+              <span class="font-weight-bold text-success js-userDiscount" data-discount="15">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">-<%= datos[0].descuento%>%</font>
+                </font>
+              </span>
+            </div>
+
+            <div class="d-flex justify-content-between mt-2">
+              <span>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Flete</font>
+                </font>
+              </span>
+              
+              <span id="price" class="font-weight-bold">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">$<%= prodct[0].minflete%></font>
+                </font>
+              </span>
+            </div>
+
+              <div class="d-flex justify-content-between mt-2">
+                <span>
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Impuesto</font>
+                </font>
+              </span>
+              
+              <span id="price" class="font-weight-bold">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">$<%= prodct[0].impuesto%></font>
+                </font>
+              </span>
+            </div>
+
+            <hr>
+            <div class="d-flex justify-content-between mt-2">
+              <span>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Total</font>
+              </font>
+            </span>
+            
+            <span id="price" class="font-weight-bold">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">$<%= valor[0].precio %></font>
+              </font>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="text-end">
+            <button class="btn btn-dark m-0" type="submit">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Crear cotización</font>
+              </font>
+            </button>
+          </div>
+        </div>
+      </form>
+      <button class="btn btn-dark" type="submit" data-bs-toggle="modal" data-bs-target="#previewModal" style="width: 28%; margin-left: 5%; margin-top: -10%;">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Vista previa</font>
+        </font>
+      </button>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body js-preview">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1281.11 2714.62"><defs><clipPath id="clip-path" transform="translate(-364.72 -59.56)"><polyline points="263.76 2835 1740.24 2835 1740.24 0.36 263.76 0.36 263.76 2835" fill="none"></polyline></clipPath></defs><title>FRONTINO 1R</title><g id="Capa_1" data-name="Capa 1"><g clip-path="url(#clip-path)"><polyline points="258.32 2508.08 1133 2508.08 1133 199.88 258.32 199.88 258.32 2508.08" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.36"></polyline><line x1="258.32" y1="1779.2" x2="1133" y2="1779.2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.36"></line></g><g clip-path="url(#clip-path)"><text transform="translate(510.68 2698.28)" font-size="53.27" font-family="CenturyGothic, Century Gothic">FRONTINO 1R</text></g><g clip-path="url(#clip-path)"><line x1="234.44" y1="2508.08" x2="59" y2="2508.08" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><line x1="234.44" y1="199.88" x2="59" y2="199.88" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><line x1="82.88" y1="2508.08" x2="82.88" y2="199.88" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><line x1="59" y1="2484.2" x2="106.88" y2="2531.96" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><line x1="106.88" y1="223.76" x2="59" y2="175.88" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><text transform="translate(57.2 1402.04) rotate(-90)" font-size="66.59" font-family="CenturyGothic, Century Gothic" id="svgHeight">108"</text><line x1="258.32" y1="175.88" x2="258.32" y2="59" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><line x1="1133" y1="175.88" x2="1133" y2="59" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><line x1="258.32" y1="82.88" x2="1133" y2="82.88" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><line x1="282.2" y1="59" x2="234.44" y2="106.76" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><line x1="1109.12" y1="106.76" x2="1157" y2="59" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><text transform="translate(648.08 57.2)" font-size="66.59" font-family="CenturyGothic, Century Gothic" id="svgWidth">28"</text><line x1="1157" y1="2508.08" x2="1280.84" y2="2508.08" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><line x1="1157" y1="1779.2" x2="1280.84" y2="1779.2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><line x1="1256.96" y1="2508.08" x2="1256.96" y2="1779.2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><line x1="1233.08" y1="2484.2" x2="1280.84" y2="2531.96" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><line x1="1280.84" y1="1803.08" x2="1233.08" y2="1755.2" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><text transform="translate(1231.28 2191.28) rotate(-90)" font-size="66.59" font-family="CenturyGothic, Century Gothic">30"</text><path d="M706.56,1692.9a22.74,22.74,0,1,0-22.74,22.74,22.74,22.74,0,0,0,22.74-22.74" transform="translate(-364.72 -59.56)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.36"></path><text transform="translate(648.68 1136) rotate(-90)" font-size="53.27" font-family="CenturyGothic, Century Gothic">Grain</text><polygon points="677.12 911.12 685.04 863.36 693.08 911.12 677.12 911.12"></polygon><polygon points="677.12 911.12 685.04 863.36 693.08 911.12 677.12 911.12" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0"></polygon><line x1="685.04" y1="911.12" x2="685.04" y2="1251.32" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line><polygon points="693.08 1203.56 685.04 1251.32 677.12 1203.56 693.08 1203.56"></polygon><polygon points="693.08 1203.56 685.04 1251.32 677.12 1203.56 693.08 1203.56" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0"></polygon><line x1="685.04" y1="1203.56" x2="685.04" y2="863.36" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></line></g></g><g id="Capa_2" data-name="Capa 2"><rect x="258.32" y="199.88" width="874.68" height="2308.2" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"></rect><line x1="258.32" y1="1779.2" x2="1133" y2="1779.2" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"></line><line x1="258.32" y1="175.88" x2="258.32" y2="59" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="234.44" y1="106.76" x2="282.2" y2="59" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="1109.12" y1="106.76" x2="1157" y2="59" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="1133.06" y1="179.42" x2="1133" y2="59" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="258.32" y1="82.88" x2="1133.06" y2="82.88" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="234.44" y1="199.88" x2="59" y2="199.88" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="59" y1="175.88" x2="106.88" y2="223.76" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="234.44" y1="2508.08" x2="58.62" y2="2508.08" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="59" y1="2484.2" x2="106.88" y2="2531.96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="82.94" y1="199.82" x2="82.94" y2="2508.08" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="1157" y1="2508.08" x2="1280.84" y2="2508.08" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="1280.84" y1="2531.96" x2="1233.08" y2="2484.2" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="1157" y1="1779.2" x2="1280.84" y2="1779.2" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><line x1="1233.08" y1="1755.2" x2="1280.84" y2="1803.08" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><path d="M1621.68,2564.71" transform="translate(-364.72 -59.56)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></path><line x1="1255.84" y1="1779.44" x2="1256.96" y2="2509.1" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></line><path d="M1049.76,1263.12V970.68" transform="translate(-364.72 -59.56)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="0.75"></path></g></svg>
+          </div>
+          <div class="modal-body js-preview">
+              <?xml version="1.0" encoding="UTF-8"?>
+
+        </div>
+          <div class="modal-footer justify-content-end">
+            <button type="button" class="btn bg-gradient-dark mb-0" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/material-kit/3.0.2/js/material-kit.min.js"
+    integrity="sha512-9EgoG4Ypp+QejqrxPVXIpj5qjGkAZKuAJSA1O/q9yfBjxYRY6SH/u15L7M+y6U3w4qMxoUQfZxABPH7zEEEgMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/material-dashboard@2.1.0/assets/js/material-dashboard.min.js"></script>
+  <script src="//cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+  <!-- <script src="/static/js/bootstrap.js"></script> -->  
+  <script>
+    $(document).ready(function () {
+      $(".form-group").removeClass("bmd-form-group");
+
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+
+<script>
+  function getValues() {
+    var price = 0;
+    var tax = 0;
+    var total = 0;
+    var priceVal = $('#id_price').val();
+    var taxVal = $('#id_tax').val();
+    var totalVal = $('#id_total').val();
+
+    if (priceVal) {
+      price = priceVal;
+    }
+
+    if (taxVal) {
+      tax = taxVal;
+    }
+
+    if (totalVal) {
+      total = totalVal;
+    }
+
+    $('#price').text('$' + price);
+    $('#tax').text('$' + tax);
+    $('#total').text('$' + total);
+  }
+
+  function getPrice(idProduct) {
+    $.ajax({
+      url: '/api/detailProduct/' + idProduct,
+      type: 'GET',
+      dataType: 'json',
+      success: function (data) {
+        var price = data[0]['price'];
+        var quantity = $('#id_quantity').val();
+        var discount = $('.js-userDiscount').data('discount');
+
+        if (!discount) {
+          discount = 0;
+        }
+
+        if (price == null) {
+          price = 0;
+        } else {
+          console.log('price: ' + price, 'count: ' + quantity, 'discount: ' + discount);
+          price = price * quantity * (1 - discount / 100);
+          tax = price * 0.07;
+
+          $('#price').text('$' + price);
+          $('#id_price').val(price);
+
+          $('#tax').text('$' + tax.toFixed(2));
+          $('#id_tax').val(tax.toFixed(2));
+
+          $('#total').text('$' + (price + tax).toFixed(2));
+          $('#id_total').val((price + tax).toFixed(2));
+        }
+
+      }
+    });
+  }
+
+  function getPreview(idProduct) {
+    var width = $('#id_slabGrossWidthOptions option:selected').text().replace('"', '');
+    var height = $('#id_height option:selected').text().replace('"', '');
+
+    $.ajax({
+      url: '/products/detailProduct/' + idProduct + "/?width=" + width + "&height=" + height,
+      type: 'GET',
+      success: function (data) {
+        $('.js-preview').html(data);
+      }
+    });
+  }
+
+  $('#id_slabGrossWidthOptions, #id_height').change(function () {
+    var idProduct = $('#id_product').val();
+
+    getPreview(idProduct);
+  });
+
+  $('#id_product').change(function () {
+    idProduct = $(this).val();
+
+    getPreview(idProduct);
+    getPrice(idProduct);
+  });
+
+  $('#id_quantity').change(function () {
+    idProduct = $('#  ').val();
+
+    getPrice(idProduct);
+  });
+
+  $('.js-textures').click(function () {
+    var id = $(this).data('value');
+    var label = $(this).data('label');
+
+    console.log(label);
+    $('#id_woodVeneerOptions').val(id);
+    $('.js-textureLabel').text(label);
+  });
+
+  // load
+  getValues();
+</script>
+
+
+  <div id="goog-gt-tt" class="skiptranslate" dir="ltr">
+    <div style="padding: 8px;">
+      <div>
+        <div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20"
+            height="20" alt="Google Traductor de Google"></div>
+      </div>
+    </div>
+    <div class="top" style="padding: 8px; float: left; width: 100%;">
+      <h1 class="title gray">Texto original</h1>
+    </div>
+    <div class="middle" style="padding: 8px;">
+      <div class="original-text"></div>
+    </div>
+    <div class="bottom" style="padding: 8px;">
+      <div class="activity-links"><span class="activity-link">Sugiere una traducción mejor</span><span
+          class="activity-link"></span></div>
+      <div class="started-activity-container">
+        <hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;">
+        <div class="activity-root"></div>
+      </div>
+    </div>
+    <div class="status-message" style="display: none;"></div>
+  </div>
+  <div class="goog-te-spinner-pos">
+    <div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px"
+        height="96px" viewBox="0 0 66 66">
+        <circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30">
+        </circle>
+      </svg></div>
+  </div>
+
+  <script src="/script/localstore.js"></script>
+</body>
+
+</html>
