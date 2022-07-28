@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+const mysql = require("mysql");
 
 const conexion = mysql.createConnection({
   host: "bu6izfnez9lfbl2cpm64-mysql.services.clever-cloud.com",
@@ -8,8 +8,8 @@ const conexion = mysql.createConnection({
 });
 conexion.connect(function (error) {
   if (error) {
+    console.log("error en la conexion");
     throw error;
-    console.log('error en la conexion')
   } else {
     console.log("CONEXION EXITOSA");
   }
