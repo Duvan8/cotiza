@@ -1,9 +1,21 @@
+const express = require('express');
+const multer  = require('multer');
+const upload = multer({ dest: 'uploads/' });
+const app = express()
 const conexion = require("../conexion/conexion");
 const { render } = require("ejs");
 const bcryptjs = require("bcryptjs");
 const req = require("express/lib/request");
 const { off } = require("../conexion/conexion");
 const controlador = {};
+
+const storage = multer.diskStorage({
+  destination: 'public/imagenes',
+  filename: (req,file,cb) => {
+    cb(null,file.originalname);
+  }
+});
+
 
 controlador.index = (req, res, next) => {
   res.render("index");
@@ -218,6 +230,18 @@ controlador.insercot = async (req, res, next) => {
   );
 };
 
+controlador.crearcot = async (req,res) => {
+  conexion.query("SELECT * FROM productos",(err,datos)=>{
+    if(err){
+      console.log("error en consultar productos");
+      throw err;
+    }
+    else{
+      res.render("crearcot",{resbd:datos});
+    }
+  })
+}
+
 controlador.viscot = async (req, res, next) => {
   const usu = req.body.usu;
   const pro = req.body.product;
@@ -398,16 +422,19 @@ controlador.accot = async (req, res) => {
   );
 };
 
+app.post('/profile', upload.single('avatar'), function (req, res, next) {
+  // req.file es el `avatar` del archivo
+  // req.body tendrá los campos textuales, en caso de haber alguno.
+})
+
 controlador.newpro = async (req, res, next) => {
   const nom = req.body.name;
   const dis = req.body.available;
   const pre = req.body.price;
   const des = req.body.description;
-  const img = req.body.image;
   const cod = req.body.svgCode;
   const log = req.session.usuu;
-
-  console.log("valor de llegada " + dis);
+  const img = req.file.originalname;
 
   var jm;
 
@@ -557,10 +584,11 @@ controlador.vistusuarios = async (req, res) => {
 controlador.precio = async (req, res) => {
   const id = req.params.idProduct;
   const cod = req.session.codd;
-  console.log("id del producto: " + id);
+  console.log("id del producto: " + id);  
   conexion.query(
-    "SELECT * FROM productos WHERE id='" + id + "'",
+    "SELECT * FROM productos WHERE nombre='" + id + "'",
     (err, results) => {
+      console.log("consulta de los productos "+results)
       conexion.query(
         "SELECT * FROM usuarios WHERE id='" + cod + "'",
         (err, resbd) => {
@@ -569,7 +597,7 @@ controlador.precio = async (req, res) => {
               console.log("error en la consulta para precio");
               throw err;
             } else {
-              console.log("consulta exitosa");
+              console.log("consulta exitosa"+results);
               res.render("vistusuarios", {
                 valor: results,
                 datos: resbd,

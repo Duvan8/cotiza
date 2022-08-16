@@ -2,6 +2,7 @@ const express = require("express");
 const conexion = require("../conexion/conexion");
 const controlador = require("../controlador/controlador");
 const router = express.Router();
+const multer = require("multer")
 
 router.get("/", controlador.index);
 router.post("/login", controlador.login);
@@ -27,6 +28,7 @@ router.post("/actualizar", controlador.usuact);
 router.post("/usueli", controlador.usueli);
 
 router.post("/cotizacion", controlador.cotizacion);
+router.post("/crearcot", controlador.crearcot);
 router.post("/insercot", controlador.insercot);
 router.post("/actucot", controlador.actucot);
 router.post("/accot", controlador.accot);

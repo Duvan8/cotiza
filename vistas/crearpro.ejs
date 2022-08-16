@@ -188,7 +188,7 @@
               </h4>
             </div>
             <div class="card-body">
-              <form method="post" action="newpro">
+              <form method="post" action="newpro" enctype="multipart/form-data">
                 <input
                   type="hidden"
                   name="csrfmiddlewaretoken"
@@ -247,7 +247,7 @@
                         </label>
                         <input
                           type="file"
-                          name="image"
+                          name="miarchivo"
                           class="form-control form-control-alternative"
                           placeholder="Imagen"
                           accept="image/*"

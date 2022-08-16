@@ -117,7 +117,9 @@
                 href="fletes"
               >
                 <font style="vertical-align: inherit">
-                  <font style="vertical-align: inherit">Fletes & impuestos </font>
+                  <font style="vertical-align: inherit"
+                    >Fletes & impuestos
+                  </font>
                 </font>
               </a>
             </li>
@@ -179,9 +181,7 @@
               <div class="col-12">
                 <h4 class="card-title">
                   <font style="vertical-align: inherit">
-                    <font style="vertical-align: inherit"
-                      >Lista de Usuarios</font
-                    >
+                    <font style="vertical-align: inherit">List of Users</font>
                   </font>
                 </h4>
               </div>
@@ -206,14 +206,14 @@
                 <div class="col-auto">
                   <button class="btn btn-secondary m-0" type="submit">
                     <font style="vertical-align: inherit">
-                      <font style="vertical-align: inherit">Filtrar</font>
+                      <font style="vertical-align: inherit">FILTER</font>
                     </font>
                   </button>
                 </div>
                 <div class="col-auto">
                   <a class="btn btn-dark m-0" href="crearusu">
                     <font style="vertical-align: inherit">
-                      <font style="vertical-align: inherit">Crear</font>
+                      <font style="vertical-align: inherit">CREATE</font>
                     </font>
                   </a>
                 </div>
@@ -224,42 +224,40 @@
                 <table class="table myTable1 data1Table">
                   <thead class="text-dark">
                     <tr>
-                      <th></th>
+                      <th>#</th>
                       <th>
                         <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit">Nombre</font>
+                          <font style="vertical-align: inherit">Name</font>
                         </font>
                       </th>
                       <th>
                         <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit">Correo</font>
+                          <font style="vertical-align: inherit">Email</font>
                         </font>
                       </th>
                       <th>
                         <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit"
-                            >Contraseña</font
-                          >
+                          <font style="vertical-align: inherit">Password</font>
                         </font>
                       </th>
                       <th>
                         <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit">Telefono</font>
+                          <font style="vertical-align: inherit">Phone</font>
                         </font>
                       </th>
                       <th>
                         <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit">Direccion</font>
+                          <font style="vertical-align: inherit">Address</font>
                         </font>
                       </th>
                       <th>
                         <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit">Descuento</font>
+                          <font style="vertical-align: inherit">Discount</font>
                         </font>
                       </th>
                       <th class="text-end">
                         <font style="vertical-align: inherit">
-                          <font style="vertical-align: inherit">Rol</font>
+                          <font style="vertical-align: inherit">Role</font>
                         </font>
                       </th>
                     </tr>
@@ -323,14 +321,48 @@
                           class="col-6 form-control des"
                         />
                       </td>
-                      
+
                       <td>
-                        <input
+                        <div class="col-lg-6">
+                          <div class="form-group mb-3">
+                            <div class="row">
+                              <select
+                                name="rol"
+                                class="form-control rol"
+                                id="id_product"
+                              >
+                                <option value="1">
+                                  <font style="vertical-align: inherit">
+                                    <font style="vertical-align: inherit"
+                                      >-----</font
+                                    >
+                                  </font>
+                                </option>
+                                <option value="admin">
+                                  <font style="vertical-align: inherit">
+                                    <font style="vertical-align: inherit"
+                                      >Administrador</font
+                                    >
+                                  </font>
+                                </option>
+                                <option value="cliente">
+                                  <font style="vertical-align: inherit">
+                                    <font style="vertical-align: inherit"
+                                      >Cliente</font
+                                    >
+                                  </font>
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- <input
                           type="text"
                           value="<%= datos.rol%>"
                           name="rol"
                           class="col-12 form-control rol"
-                        />
+                        /> -->
                       </td>
                       <td>
                         <button

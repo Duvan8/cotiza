@@ -210,6 +210,12 @@
 
                       <th>
                         <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">Imagen</font>
+                        </font>
+                      </th>
+
+                      <th>
+                        <font style="vertical-align: inherit">
                           <font style="vertical-align: inherit">Nombre</font>
                         </font>
                       </th>
@@ -238,6 +244,7 @@
                     <% datos.forEach(function (datos) { %>
                     <tr>
                       <td><%= datos.id%></td>
+                      <td><img src="../imagenes/<%= datos.imagen%>" alt="" style="width: 300px;"></td>
                       <td><%= datos.nombre%></td>
                       <td><%= datos.creado%></td>
                       <td><%= datos.disponible%></td>

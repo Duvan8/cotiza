@@ -3,33 +3,21 @@
 
 <head>
   <title>Acemar</title>
-  <!-- Required meta tags -->
   <meta http-equiv="Content-type" content="text/html" charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <!-- Fonts and icons -->
   <link rel="stylesheet" type="text/css"
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.0.96/css/materialdesignicons.min.css">
-
-  <!-- Style CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-kit/3.0.2/css/material-kit.css"
     integrity="sha512-BinDPZLJK6LgAxy8Rzbzh9CY1k2SL2VABFIcfhiXztdz29uBXkWTq+yhfrZBRb3ASyiz/WPsD8QGE6vBBjPz0w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
-  <!-- <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/material-dashboard@2.1.0/assets/css/material-dashboard.min.css"> -->
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-
   <link rel="stylesheet" href="/static/css/custom-main.css">
-
-
-
   <link type="text/css" rel="stylesheet" charset="UTF-8"
     href="https://translate.googleapis.com/translate_static/css/translateelement.css">
   <link rel="stylesheet" href="estilos/estilos.css">
-
-  <script src="script/capwh.js"></script>
 </head>
 
 <body class="bg-yellow">
@@ -163,114 +151,13 @@
                   </div>
                   <div class="col-12 col-md-6">
                     <select name="product" class="form-control product" id="id_product">
-                      <option value="Frontino 1RV">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Frontino 1RV</font>
-                        </font>
-                      </option>
-
-                      <option value="Frontino 3R">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Frontino 3R</font>
-                        </font>
-                      </option>
-
-                      <option value="Frontino 2RV">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Frontino 2RV</font>
-                        </font>
-                      </option>
-
-                      <option value="Frontino SR">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Frontino SR</font>
-                        </font>
-                      </option>
-
-                      <option value="Frontino 2R">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Frontino 2R</font>
-                        </font>
-                      </option>
-
-                      <option value="Frontino 1R1RV">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Frontino 1R1RV</font>
-                        </font>
-                      </option>
-
-                      <option value="Frontino 3R1RV">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Frontino 3R1RV</font>
-                        </font>
-                      </option>
-
-                      <option value="Frontino 3R2RV">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Frontino 3R2RV</font>
-                        </font>
-                      </option>
-
-                      <option value="Frontiño 1R">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Frontiño 1R</font>
-                        </font>
-                      </option>
-
-                      <option value="Belmira 1VCA">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Belmira 1VCA</font>
-                        </font>
-                      </option>
-
-                      <option value="Belmira 1VDP">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Belmira 1VDP</font>
-                        </font>
-                      </option>
-
-                      <option value="Belmira 4VCA">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Belmira 4VCA</font>
-                        </font>
-                      </option>
-
-                      <option value="Belmira 4VDP">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Belmira 4VDP</font>
-                        </font>
-                      </option>
-
-                      <option value="Belmira 1VCP">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Belmira 1VCP</font>
-                        </font>
-                      </option>
-
-                      <option value="Rejilla ventilada 1">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Rejilla ventilada 1</font>
-                        </font>
-                      </option>
-
-                      <option value="Louver ventilado 2">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Louver ventilado 2</font>
-                        </font>
-                      </option>
-
-                      <option value="Rejilla ventilada 3">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Rejilla ventilada 3</font>
-                        </font>
-                      </option>
-
-                      <option value="Louver ventilado 4">
-                        <font style="vertical-align: inherit;">
-                          <font style="vertical-align: inherit;">Louver ventilado 4</font>
-                        </font>
-                      </option>
-
+                      <% resbd.forEach(function (resbd) { %>
+                        <option value="<%= resbd.nombre%>">
+                          <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;"><%= resbd.nombre%></font>
+                          </font>
+                        </option>
+                        <% }) %>
                     </select>
 
                   </div>
